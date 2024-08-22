@@ -1,0 +1,466 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.card-info {
+    display: flex;
+    gap: 4px;
+    width: 100%;
+
+
+}
+
+.contendor {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 200px;
+}
+
+.tiempo {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #0D7169;
+}
+
+.estrellas {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #F2A626;
+}
+
+.contenedorPresentacion {
+    width: 100%;
+    position: relative;
+    height: 300px;
+    background: #127A76;
+    flex: none;
+}
+
+.contendorDesayuno {
+    width: 100%;
+}
+
+.text-title {
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    /* 150% */
+    letter-spacing: -0.176px;
+}
+
+.text-body {
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    /* 133.333% */
+    letter-spacing: -0.198px;
+}
+
+
+.contenedorPresentacion img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+    /* Asegura que la imagen se ajuste bien dentro de su contenedor */
+}
+
+
+.no-scroll {
+    &::-webkit-scrollbar {
+      display: none;
+    }
+}
+
+.contendorCarta {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    flex-direction: column;
+    padding: 10px 10px 0 10px;
+    flex-grow: 1;
+    overflow: auto;
+}
+
+.cuerpoContenido {
+    color: #646464;
+}
+
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    padding: 16px;
+}
+
+.carrito {
+    /* Coloca el carrito justo encima del navbar */
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    align-items: center;
+    gap: 8px;
+    justify-content: space-between;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.carrito .carritoCantidad button {
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    color: #127A76;
+
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.carrito .cantidad {
+    color: #363636;
+}
+
+
+.navbar {
+    background-color: white;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0px -2px 2px 0px rgba(0, 0, 0, 0.10);
+}
+
+.navbar a {
+    padding: 6px 16px;
+    text-align: center;
+    /* Asegura que el texto dentro del enlace esté centrado */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Hace que el enlace ocupe todo el espacio del contenedor */
+    width: 100%;
+    height: 100%;
+    
+}
+
+.contenedorCarrito {
+    width: 100%;
+    background: blue;
+}
+.metacontainer{
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    flex-grow: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.carritoCantidad {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 5px 10px;
+    gap: 10px;
+    background: white;
+    border: 1px solid #C7C7C7;
+    border-radius: 4px;
+}
+
+.agregarAlCarrito {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #127A76;
+    padding: 6px 16px;
+    height: 40px;
+    color: white;
+    border: 1px solid #C7C7C7;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.carousel {
+    display: flex;
+    gap: 10px;
+    overflow-x: scroll;
+}
+
+.carousel-container{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.carousel-container span {
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.072px;
+}
+
+.carousel-item {
+    min-width: 112px;
+    background-color: green;
+    text-align: center;
+    width: 112px;
+    height: 112px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.imgCarrusel {
+    width: 112px;
+    height: 112px;
+    object-fit: cover;
+    /* Asegura que la imagen se ajuste al tamaño del contenedor */
+    border-radius: 8px;
+}
+
+.modalClass {
+    position: fixed;
+    bottom: -100%; /* Inicialmente fuera de la vista */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 650px;
+    background: white;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    transition: bottom 0.5s ease; /* Controla la velocidad de la animación */
+}
+
+.modalClass.show {
+    bottom: 0; /* Se desplaza a la posición final */
+}
+
+.backModal {
+    position: fixed;
+    bottom: -300px; /* Inicialmente fuera de la vista */
+    width: 100%;
+    transition: bottom 0.5s ease; /* Controla la velocidad de la animación */
+}
+
+.backModal.show {
+    bottom: 0; 
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) { 
+
+    .modalClass {
+        min-width: 100%;
+    
+    }
+}
+
+/** CARRITO .V**/
+.carrito-cantainer{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+  
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    height: 100%;
+    flex-grow: 1;
+    overflow: auto;
+    font-family: 'Roboto','font sans';
+}
+.titulo-prodcuto{
+    font-family: 'Montserrat','font sans';
+    font-weight: 700;
+}
+.carrito-contenedor{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    overflow: auto;
+    gap: 8px;
+}
+
+
+.carrito-botones{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+.agregarAlCarrito {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #127A76;
+    padding: 6px 16px;
+    height: 40px;
+    color: white;
+    border: 1px solid #C7C7C7;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+.carrito-boton{
+    height: 50px !important;
+    justify-content: space-between !important;
+}
+.botonconicono{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 14px;
+}
+.textbutton{
+    text-align: start;
+}
+.adondeenviar{
+    font-size: 14px;
+    font-weight: 700;
+}
+.carrito-cantidad{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Montserrat','font sans';
+}
+.buttondangeroutline{
+    border: none;
+    background-color: #FFF5F5;
+    color: #EF4444;
+    font-size: 14px;
+    height: 40px;
+    flex: none;
+    border-radius: 4px;
+}
+.carrito-card-pedido{
+    display: flex;
+    gap: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.imgCarrito{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+    flex: none;
+}
+.carrito-contenidotext{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+}
+.carrito-nombre-producto{
+    font-size: 14px;
+    font-weight: 700;
+}
+.carrito-precio-producto{
+    font-weight: 700;
+    color: #3B82F6;
+}
+.spanactivable{
+    font-size: 14px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.listado-detalle-pedido{
+    padding-left: 16px;
+    margin: 0;
+}
+.carrito-botonesacard{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.cantidadproductos{
+    width: 100px;
+    flex: none;
+    border-radius: 100px;
+    background: #F5F7FC;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+}
+.butonmenos{
+    color: #C7C7C7;
+    width: 30px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex: none;
+}
+.butonmas{
+    color: #3B82F6;
+    width: 30px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex: none;
+}
+.cantidadlabel{
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+}
+.labeleditar{
+    font-weight: 500;
+    font-size: 14px;
+}
+
