@@ -441,6 +441,11 @@ nav a {
 .textbutton{
     text-align: start;
 }
+
+.icon{
+    cursor: pointer;
+}
+
 .adondeenviar{
     font-size: 14px;
     font-weight: 700;
