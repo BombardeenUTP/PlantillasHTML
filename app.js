@@ -5,11 +5,19 @@ cart=document.getElementById('cart'),
 clickPointer=document.getElementById('clickPointer'),
 secondBackgroundModal=document.getElementById('secondBackgroundModal'),
 secondModal=document.getElementById('secondModal')
-iconCart=document.getElementById('iconCart');
+iconCart=document.getElementById('iconCart'),
+cartAgregar=document.getElementById('cartAgregar');
 iconButton.addEventListener('click', () => {
     backgroundModal.classList.toggle('show');
     modal.classList.toggle('show');
 })
+
+cartAgregar.addEventListener('click', () => {
+    secondBackgroundModal.classList.toggle('show');
+    secondModal.classList.toggle('show');
+    console.log("sdasdasdasd")
+});
+
 
 clickPointer.addEventListener('click', () => {
     secondBackgroundModal.classList.toggle('show');
@@ -26,8 +34,6 @@ secondBackgroundModal.addEventListener('click', () => {
     secondBackgroundModal.classList.remove('show');
     secondModal.classList.remove('show');
 });
-
-
 
 
 backgroundModal.addEventListener('click', () => {
@@ -50,12 +56,12 @@ backgroundModal.addEventListener('click', () => {
 
 function showSecondScreen() {
     document.getElementById('firstScreen').style.display = 'none';
-    document.getElementById('secondScreen').style.display = 'block';
+    document.getElementById('secondScreen').style.display = 'flex';
 }
 
 
 function showBackScreen() {
-    document.getElementById('firstScreen').style.display = 'block';
+    document.getElementById('firstScreen').style.display = 'flex';
     document.getElementById('secondScreen').style.display = 'none';
 }
 
