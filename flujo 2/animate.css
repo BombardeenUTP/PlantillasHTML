@@ -1,8 +1,7 @@
-.main-container{
-    display: block;
+.main-contain
 }
 .main-container-page2.animate{
-    display: block;
+    display: flex;
 }
 .main-container.animate{
     display: none;
