@@ -92,7 +92,7 @@ header {
     letter-spacing: -0.34px;
 }
 
-.menu {
+.menu-first {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -376,6 +376,9 @@ nav a {
 .card-link{
     text-decoration: none;
     color: #363636;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
 }
 
 /** CARRITO .V**/
@@ -538,5 +541,307 @@ nav a {
 .labeleditar{
     font-weight: 500;
     font-size: 14px;
+}
+
+.card-info {
+    display: flex;
+    gap: 4px;
+    width: 100%;
+
+
+}
+
+.contendor {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 200px;
+}
+
+.tiempo {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #0D7169;
+}
+
+.estrellas {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #F2A626;
+}
+
+.contenedorPresentacion {
+    width: 100%;
+    position: relative;
+    height: 300px;
+    background: #127A76;
+    flex: none;
+}
+
+.contendorDesayuno {
+    width: 100%;
+}
+
+.text-title {
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    /* 150% */
+    letter-spacing: -0.176px;
+}
+
+.text-body {
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    /* 133.333% */
+    letter-spacing: -0.198px;
+}
+
+
+.contenedorPresentacion img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+    /* Asegura que la imagen se ajuste bien dentro de su contenedor */
+}
+
+
+.no-scroll {
+    &::-webkit-scrollbar {
+      display: none;
+    }
+}
+
+.contendorCarta {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    flex-direction: column;
+    padding: 10px 10px 0 10px;
+    flex-grow: 1;
+    height: 100%;
+    overflow: auto;
+}
+
+.cuerpoContenido {
+    color: #646464;
+}
+
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    padding: 16px;
+}
+
+.carrito {
+    /* Coloca el carrito justo encima del navbar */
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    align-items: center;
+    gap: 8px;
+    justify-content: space-between;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.carrito .carritoCantidad button {
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    color: #127A76;
+
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.carrito .cantidad {
+    color: #363636;
+}
+
+
+.navbar {
+    background-color: white;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0px -2px 2px 0px rgba(0, 0, 0, 0.10);
+}
+
+.navbar a {
+    padding: 6px 16px;
+    text-align: center;
+    /* Asegura que el texto dentro del enlace esté centrado */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Hace que el enlace ocupe todo el espacio del contenedor */
+    width: 100%;
+    height: 100%;
+    
+}
+
+.contenedorCarrito {
+    width: 100%;
+    background: blue;
+}
+.metacontainerSecond{
+    display: flex;
+    flex-direction: column;
+    height: 53%;
+    flex-grow: 1;
+    display: none;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.carritoCantidad {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 5px 10px;
+    gap: 10px;
+    background: white;
+    border: 1px solid #C7C7C7;
+    border-radius: 4px;
+}
+
+.agregarAlCarrito {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #127A76;
+    padding: 6px 16px;
+    height: 40px;
+    color: white;
+    border: 1px solid #C7C7C7;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.carousel {
+    display: flex;
+    gap: 10px;
+    overflow-x: scroll;
+}
+
+.carousel-container{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.carousel-container span {
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.072px;
+}
+
+.carousel-item {
+    min-width: 112px;
+    background-color: green;
+    text-align: center;
+    width: 112px;
+    height: 112px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.imgCarrusel {
+    width: 112px;
+    height: 112px;
+    object-fit: cover;
+    /* Asegura que la imagen se ajuste al tamaño del contenedor */
+    border-radius: 8px;
+}
+
+.modalClass {
+    position: fixed;
+    bottom: -100%; /* Inicialmente fuera de la vista */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 90vh;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    transition: bottom 0.5s ease; /* Controla la velocidad de la animación */
+}
+
+.modalClass.show {
+    bottom: 0; /* Se desplaza a la posición final */
+}
+
+.backModal {
+    position: fixed;
+    bottom: 100%; /* Inicialmente fuera de la vista */
+    width: 100%;
+    transition: bottom 0.5s ease; /* Controla la velocidad de la animación */
+}
+
+
+.metacontainerSegunda {
+    display: none; /* Oculta la segunda pantalla por defecto */
+}
+
+/* Opcional: Estilos adicionales para la segunda pantalla */
+.metacontainerSegunda {
+    flex-direction: column;
+    flex-grow: 1;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+.backModal.show {
+    bottom: 0; 
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) { 
+
+    .modalClass {
+        min-width: 100%;
+    
+    }
 }
 
