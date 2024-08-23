@@ -4,25 +4,25 @@ body{
     margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
-.main-container{
+.main-container-page2{
     height: 100%;
     display: flex;
     flex-direction: column;
     position: relative;
     overflow-y: auto;
 }
-.header-container{
+.header-container-page2{
    display: flex;
    flex-direction: column;
    gap: 10px;
    padding: 16px;
 }
-.title-section-container{
+.title-section-container-page2{
     position: relative;
 
     height: 38px;
 }
-.button-back{
+.button-back-page2{
     display: flex;
     width: 38px;
     height: 38px;
@@ -38,19 +38,15 @@ body{
     cursor: pointer;
     text-decoration: none;
 }
-.button-back{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.title-cont{
+
+.title-cont-page2{
 
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
 }
-.title{
+.title-page2{
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
@@ -58,13 +54,13 @@ body{
     letter-spacing: -0.306px;
     color: #4F4F4F;
 }
-.cont{
+.cont-page2{
     flex-grow: 1;
     display: flex;
     flex-direction: column;
     overflow: auto;
 }
-.nav ul{
+.nav-page2 ul{
     list-style-type: none;
    
     display: flex;
@@ -75,7 +71,7 @@ body{
     padding: 10px;
 
 }
-.option{
+.option-page2{
     font-size: 10px;
     font-style: normal;
     font-weight: 400;
@@ -86,7 +82,7 @@ body{
     padding: 4px;
 
 }
-.option:hover{
+.option-page2:hover{
     font-weight: 700;
     font-size: 12px;
 }
@@ -95,7 +91,7 @@ body{
 
 /* esto es el body */
 
-.body-container{
+.body-container-page2{
     display: flex;
     flex-grow: 1;
     gap:32px;
@@ -103,7 +99,7 @@ body{
     flex-grow: 1;
     overflow-y: auto;
 }
-.body-container aside{
+.body-container-page2 aside{
     width: 40%;
     display: flex;
     flex-direction: column;
@@ -114,15 +110,15 @@ body{
 }
 
 
-.galery-img{
+.galery-img-page2{
     width: 90%;
     cursor: pointer;
 }
-.galery-img img{
+.galery-img-page2 img{
     width: 100%;
 }
 
-.body-right{
+.body-right-page2{
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -131,28 +127,28 @@ body{
     gap:16px;
     overflow: hidden;
 }
-.img-container{
+.img-container-page2{
     width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
    
 }
-.img-container img{
+.img-container-page2 img{
     width: 90%;
 
 }
 
 
 
-.price-title{
+.price-title-page2{
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.title-food{
+.title-food-page2{
     font-size: 22px;
     font-style: normal;
     font-weight: 700;
@@ -161,7 +157,7 @@ body{
     color: #4F4F4F;
     display: block;
 }
-.price{
+.price-page2{
     color:#F16E1C;
     font-size: 24px;
     font-style: normal;
@@ -169,7 +165,7 @@ body{
     line-height: normal;
     display: block;
 }
-.information{
+.information-page2{
     width: 100%;
     font-size: 12px;
     font-style: normal;
@@ -182,11 +178,11 @@ body{
 
 
 /* carrito de compras*/
-.cart-shop-container{
+.cart-shop-container-page2{
     display: flex;
     justify-content: end;
 }
-.button-cart-shopping{
+.button-cart-shopping-page2{
     border-radius: 16px 0px 0px 0px;
     background: #F16E1C;
     display: flex;
@@ -199,13 +195,13 @@ body{
     cursor: pointer;
 }
 
-.cont{
+.cont-page2{
     max-width: 700px;
     margin: 0 auto;
 }
 
 
-.cart-animate-cont{
+.cart-animate-cont-page2{
     position: fixed;
     bottom: -100%;
     left: 0;
@@ -216,7 +212,7 @@ body{
     transition: bottom 0.5s linear;
     background: rgba(0, 0, 0 , .25);
 }
-.cart-animate{
+.cart-animate-page2{
     width: 100%;
     background: white;
     height: 90vh;
@@ -226,7 +222,7 @@ body{
     padding-bottom: 25px;
 }
 
-.cart-animate-cont.show {
+.cart-animate-cont-page2.show {
     bottom: 0; /* Se desplaza a la posición final */
     top: 0;
     transition: bottom 0.5s ease;
@@ -234,26 +230,26 @@ body{
 
 
 @media (min-width: 768px) { 
-    .body-container aside{
+    .body-container-page2 aside{
         width: 20%;
     }
-    .option {
+    .option-page2 {
         font-size: 16px;
     }
-    .information{
+    .information-page2{
         font-size:20px;
     }
-    .title-food{
+    .title-food-page2{
         font-size: 30px;
     }
-    .price{
+    .price-page2{
         font-size: 25px;
     }
 }
 
 /** CARRITO **/
 
-.carrito-cantainer{
+.carrito-cantainer-page2{
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -263,11 +259,11 @@ body{
     overflow: auto;
     font-family: 'Roboto','font sans';
 }
-.titulo-prodcuto{
+.titulo-prodcuto-page2{
     font-family: 'Montserrat','font sans';
     font-weight: 700;
 }
-.carrito-contenedor{
+.carrito-contenedor-page2{
     display: flex;
     flex-grow: 1;
     flex-direction: column;
@@ -276,13 +272,13 @@ body{
 }
 
 
-.carrito-botones{
+.carrito-botones-page2{
     display: flex;
     flex-direction: column;
     gap: 10px;
     width: 100%;
 }
-.agregarAlCarrito {
+.agregarAlCarrito-page2 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -295,30 +291,30 @@ body{
     cursor: pointer;
     width: 100%;
 }
-.carrito-boton{
+.carrito-boton-page2{
     height: 50px !important;
     justify-content: space-between !important;
 }
-.botonconicono{
+.botonconicono-page2{
     display: flex;
     align-items: center;
     gap: 10px;
     color: white;
     font-size: 14px;
 }
-.textbutton{
+.textbutton-page2{
     text-align: start;
 }
-.adondeenviar{
+.adondeenviar-page2{
     font-size: 14px;
     font-weight: 700;
 }
-.carrito-cantidad{
+.carrito-cantidad-page2{
     font-size: 20px;
     font-weight: 700;
     font-family: 'Montserrat','font sans';
 }
-.buttondangeroutline{
+.buttondangeroutline-page2{
     border: none;
     background-color: #FFF5F5;
     color: #EF4444;
@@ -327,49 +323,49 @@ body{
     flex: none;
     border-radius: 4px;
 }
-.carrito-card-pedido{
+.carrito-card-pedido-page2{
     display: flex;
     gap: 10px;
     padding-top: 8px;
     padding-bottom: 8px;
     border-bottom: 1px solid #e5e5e5;
 }
-.imgCarrito{
+.imgCarrito-page2{
     width: 50px;
     height: 50px;
     object-fit: cover;
     border-radius: 5px;
     flex: none;
 }
-.carrito-contenidotext{
+.carrito-contenidotext-page2{
     display: flex;
     flex-direction: column;
     gap: 4px;
     width: 100%;
 }
-.carrito-nombre-producto{
+.carrito-nombre-producto-page2{
     font-size: 14px;
     font-weight: 700;
 }
-.carrito-precio-producto{
+.carrito-precio-producto-page2{
     font-weight: 700;
     color: #3B82F6;
 }
-.spanactivable{
+.spanactivable-page2{
     font-size: 14px;
     text-decoration: underline;
     cursor: pointer;
 }
-.listado-detalle-pedido{
+.listado-detalle-pedido-page2{
     padding-left: 16px;
     margin: 0;
 }
-.carrito-botonesacard{
+.carrito-botonesacard-page2{
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-.cantidadproductos{
+.cantidadproductos-page2{
     width: 100px;
     flex: none;
     border-radius: 100px;
@@ -380,7 +376,7 @@ body{
     gap: 8px;
     justify-content: center;
 }
-.butonmenos{
+.butonmenos-page2{
     color: #C7C7C7;
     width: 30px;
     font-weight: 700;
@@ -390,7 +386,7 @@ body{
     height: 100%;
     flex: none;
 }
-.butonmas{
+.butonmas-page2{
     color: #3B82F6;
     width: 30px;
     font-weight: 700;
@@ -400,13 +396,13 @@ body{
     height: 100%;
     flex: none;
 }
-.cantidadlabel{
+.cantidadlabel-page2{
     width: 100%;
     text-align: center;
     font-size: 14px;
     font-weight: 600;
 }
-.labeleditar{
+.labeleditar-page2{
     font-weight: 500;
     font-size: 14px;
 }

@@ -1,0 +1,12 @@
+.main-container{
+    display: block;
+}
+.main-container-page2.animate{
+    display: block;
+}
+.main-container.animate{
+    display: none;
+}
+.main-container-page2{
+    display: none;
+}
